@@ -1,0 +1,38 @@
+{
+	"RecurringMessages": [
+	
+	]
+}
+make ruko greet, night morning etc
+
+var splitMessage = lowerMessage.split(wordRegex);
+	// logger.info(splitMessage);
+	var score = 0;
+	score += calculateQuestionScore(splitMessage, lowerMessage);
+	primaryList.forEach(function(word) {
+		if (splitMessage.includes(word)) {
+			score += 1;
+		}
+	});
+	secondaryList.forEach(function(word) {
+		if (splitMessage.includes(word)) {
+			score += .5;
+		}
+	});
+	tertiaryList.forEach(function(word) {
+		if (splitMessage.includes(word)) {
+			score += .34;
+		}
+	});
+	
+{
+	"Groups": [
+		{
+			"maxValue": ,
+			"wordValue": ,
+			"words": [
+				"",
+			]
+		},
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"operationalChannels": [
+		"420633153535868939",
+		"444866417578344469",
+		"458694424998969355",
+		"459179194509819914",
+		"545954466478817283"
+	],
+	"modList": [
+		"250526369103085588",
+		"195850585554026505",
+		"132066013888905216",
+		"241659606168895488",
+		"109059796979720192",
+		"171679253694382080",
+		"246990486945005568",
+		"159226392507187200",
+		"390378355444154371",
+		"311867252242907147",
+		"196629780345389066",
+		"190441000194277376"
+	],
+	"FlyID": "110887128300269568",
+	"whitelist": [
+		"110887128300269568",
+		"310406878251450378",
+		"285945051429994497",
+		"158957689727221760"
+	],
+	"publicFunctions": [
+		"Headpat",
+		"Good bot",
+		"[Good Night/Goodnight]",
+		"[Morning/Ohayo/Ohayou/Good Morning]",
+		"I love you",
+		"Who are you"
+	],
+	"privateFunctions": [
+		"[] means pick one options. If there's only one, there might be future options. {} means input an appropriate value.",
+		"[Setup/Create] [recurring message]",
+		"[Remove/Delete] [recurring message]",
+		"[List/Show/Display] [recurring message]",
+		"Hush {minutes}",
+		"Unhush"
+	]
+}

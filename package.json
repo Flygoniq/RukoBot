@@ -1,0 +1,11 @@
+{
+  "name": "Ruko Bot",
+  "version": "1.0.0",
+  "description": "Pls go to the ReLive Channel",
+  "main": "bot.js",
+  "author": "Flygoniq",
+  "dependencies": {
+    "discord.io": "https://github.com/woor/discord.io/tarball/gateway_v6",
+    "winston": "^3.2.1"
+  }
+}

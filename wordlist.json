@@ -1,0 +1,135 @@
+{
+	"Groups": [
+		{
+			"category": "Super triggers",
+			"maxValue": 0.7,
+			"wordValue": 0.7,
+			"words": [
+				"reroll",
+				"memoir",
+				"4*",
+				"3*",
+				"2*"
+			]
+		},
+		{
+			"category": "Words relating to gacha",
+			"maxValue": 0.5,
+			"wordValue": 0.5,
+			"words": [
+				"rate",
+				"pull",
+				"crystal",
+				"banner",
+				"started",
+				"keep",
+				"roll",
+				"keeping"
+			]
+		},
+		{
+			"category": "Girl names",
+			"maxValue": 0.5,
+			"wordValue": 0.5,
+			"words": [
+				"akikaze",
+				"rui",
+				"tanaka",
+				"yuyuko",
+				"tomoe",
+				"tamao",
+				"otonashi",
+				"ichie",
+				"yumeoji",
+				"fumi",
+				"ebisu",
+				"tsukasa",
+				"kano",
+				"misora",
+				"ootsuki",
+				"aruru",
+				"nonomiya",
+				"lalafin",
+				"shizuha",
+				"kocho",
+				"yachiyo",
+				"tsuruhime",
+				"otori",
+				"michiru",
+				"yukishiro",
+				"akira",
+				"liu",
+				"meifan",
+				"yumeoji",
+				"shiori",
+				"character",
+				"halloruko",
+				"heracles",
+				"pnana",
+				"phanana"
+			]
+		},
+		{
+			"category": "Game Terms",
+			"maxValue": 0.5,
+			"wordValue": 0.34,
+			"words": [
+				"stamina",
+				"gacha",
+				"grind",
+				"event",
+				"tutorial",
+				"data",
+				"unit",
+				"relive",
+				"maintenance",
+				"tier",
+				"dexterity",
+				"act",
+				"defense",
+				"norm def",
+				"spec def",
+				"agility",
+				"power score",
+				"cost",
+				"hp",
+				"poison",
+				"flower",
+				"wind",
+				"ice",
+				"cosmos",
+				"cloud",
+				"moon",
+				"dream",
+				"brilliance",
+				"costume",
+				"card",
+				"healer",
+				"healers",
+				"kirameki"
+			]
+		},
+		{
+			"category": "Temporary Event Words",
+			"maxValue": 0.5,
+			"wordValue": 0.34,
+			"words": [
+				"phantom"
+			]
+		},
+		{
+			"category": "Minor game terms",
+			"maxValue": 0.34,
+			"wordValue": 0.2,
+			"words": [
+				"skip",
+				"farm",
+				"gem",
+				"stage",
+				"reset",
+				"global",
+				"tank"
+			]
+		}
+	]
+}
