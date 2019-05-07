@@ -33,7 +33,8 @@
 		"[Good Night/Goodnight]",
 		"[Morning/Ohayo/Ohayou/Good Morning]",
 		"I love you",
-		"Who are you"
+		"Who are you",
+		"Redirect {ping user} | This command manually triggers ruko on a pinged user"
 	],
 	"privateFunctions": [
 		"[] means pick one options. If there's only one, there might be future options. {} means input an appropriate value.",

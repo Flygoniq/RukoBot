@@ -92,10 +92,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		} else if (userID === FlyID) {
 			response = `Sorry Fly... Have I been a bad bot? <:dondoncry:499134526199562251>`;
 		}
-		bot.sendMessage({
-			to: channelID,
-			message: response,
-		});
+		sendMessage(channelID, response);
 		return;
 	}
 	// AQOURS CHECK
@@ -300,20 +297,24 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			}
 			return;
 		}
+		//REDIRECT
+		if (splitMessage[0] === 'redirect' && splitMessage[1]) {
+			triggerMessage(channelID, splitMessage[1]);
+		}
 		//GREETINGS
 		if (splitMessage[0] === 'headpat' || (splitMessage[0] === 'head' && splitMessage[1] === 'pat')) {
-			acceptPraise(channelID);
+			gasm(channelID);
 			return;
 		}
 		if (splitMessage[0] === 'good' && splitMessage[1] === 'bot') {
-			gasm(channelID);
+			acceptPraise(channelID);
 			return;
 		}
 		if (splitMessage[0] === 'goodnight' || (splitMessage[0] === 'good' && splitMessage[1] === 'night') || splitMessage[0] === 'oyasumi') {
 			sendMessage(channelID, 'Oyasumi <:rukonap:475621586762858506>');
 			return;
 		}
-		if (splitMessage[0] === 'morning' || splitMessage[0].includes('ohayo') || (splitMessage[0] === 'good' && splitMessage[1] === 'morning')) {
+		if (splitMessage[0] === 'morning' || (splitMessage[0] && splitMessage[0].includes('ohayo')) || (splitMessage[0] === 'good' && splitMessage[1] === 'morning')) {
 			sendMessage(channelID, 'Ohayou~ <:KaorukoSmol:506883771912683520>');
 			return;
 		}
@@ -322,7 +323,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 			return;
 		}
 		if (splitMessage[0] === 'who' && splitMessage[1] === 'are' && splitMessage[2] === 'you') {
-			sendMessage(channelID, 'I\'m Ruko, of course. Fully organic and definitely not made by Flygoniq. I help the mods and play with everyone! <:Kaoruko:428941858073346056>');
+			sendMessage(channelID, 'I\'m Ruko, of course. Fully organic and definitely not made by Flygoniq. I help the mods and play with everyone! <:Kaoruko:428941858073346056>\nMy code is at https://github.com/Flygoniq/RukoBot');
 			return;
 		}
 	}
@@ -348,12 +349,7 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 		score += miniScore;
 	});
 	if (score >= 1) {
-		bot.sendMessage({
-			to: channelID,
-			message: `Hey <@${userID}>, it seems like you may be looking to talk about Starlight Relive.\n` + 
-				`Allow me to point you towards the relive section, such as <#459984807179321354>, <#568703574230695936>, or <#500310588984000513>, which is where the players and news will be.\n` + 
-				'If Ruko made a mistake, pls ping Flygoniq so he can teach me.',
-		});
+		triggerMessage(channelID, userID);
 		logger.info(message);
 	}
 });
@@ -421,4 +417,10 @@ function clearConversation() {
 	partnerID = '';
 	topic = '';
 	phase = 0;
+}
+
+function triggerMessage(channelID, userID) {
+	sendMessage(channelID, `Hey <@${userID}>, it seems like you may be looking to talk about Starlight Relive.\n` + 
+				`Allow me to point you towards the relive section, such as <#459984807179321354>, <#568703574230695936>, or <#500310588984000513>, which is where the players and news will be.\n` + 
+				'If Ruko made a mistake, pls ping Flygoniq so he can teach me.');
 }

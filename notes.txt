@@ -1,3 +1,5 @@
+https://discordapp.com/oauth2/authorize?&client_id=569999487909494796&scope=bot&permissions=8
+
 {
 	"RecurringMessages": [
 	

@@ -7,6 +7,9 @@
 			"words": [
 				"reroll",
 				"memoir",
+				"memoirs",
+				"6*",
+				"5*",
 				"4*",
 				"3*",
 				"2*"
@@ -24,7 +27,8 @@
 				"started",
 				"keep",
 				"roll",
-				"keeping"
+				"keeping",
+				"rng"
 			]
 		},
 		{
@@ -71,13 +75,14 @@
 		},
 		{
 			"category": "Game Terms",
-			"maxValue": 0.5,
+			"maxValue": 0.8,
 			"wordValue": 0.34,
 			"words": [
 				"stamina",
 				"gacha",
 				"grind",
 				"event",
+				"events",
 				"tutorial",
 				"data",
 				"unit",
